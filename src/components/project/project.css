@@ -1,0 +1,137 @@
+.ml_projects {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    margin-bottom: 3rem;
+}
+
+.ml_projects-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ml_projects-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.ml_project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ml_project-single {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 500px;
+}
+
+.ml_project-img {
+    width: 100%;
+    height: 550px;
+    background: #141414;
+    margin-bottom: 1rem;
+}
+
+.ml_projects-container hr {
+    width: 100%;
+    border: 1px solid #B3B3B3;
+    margin: 2rem 0;
+}
+
+.ml_projects-container h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #B3B3B3;
+}
+
+.ml_projects-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.ml_projects-card {
+    height: 420px;
+    width: 390px;
+    background: #D9D9D9;
+}
+
+.ml_projects-card:hover {
+    transform: translateY(30px);
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1150px) {
+    .ml_projects {
+        padding: 0 3rem;
+    }
+
+    .ml_projects-container h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .ml_projects-container h3 {
+        font-size: 30px;
+        line-height: 44px;
+        text-align: center;
+    }
+
+    .ml_project {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .ml_projects-container h1 {
+        font-size: 36px;
+    }
+
+    .ml_projects-container h3 {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .ml_projects-cards {
+        flex-direction: column;
+    }
+
+    .ml_projects-card:hover {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .ml_projects {
+        padding: 0 1rem;
+    }
+
+    .ml_projects-container h1 {
+        font-size: 32px;
+    }
+
+    .ml_projects-container h3 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .ml_project-img {
+        height: 430px;
+    }
+
+    .ml_projects-card {
+        height: 350px;
+        width: 290px;
+        background: #D9D9D9;
+    }
+}

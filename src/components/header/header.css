@@ -1,0 +1,159 @@
+.ml_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.ml_header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.ml_header-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.ml_header-container p {
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.ml_mistallogik {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.ml_header-container h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #B3B3B3;
+    margin: 2rem 0;
+}
+
+.ml_header-cert {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ml_header-cert_brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ml_header-cert_brand p {
+    display: flex;
+    align-self: center;
+    margin: 0;
+}
+
+.ml_header-cert-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ml_header-cert-images img {
+    cursor: pointer;
+}
+
+.ml_header hr {
+    width: 100%;
+    border: 1px solid #B3B3B3;
+    margin: 2rem 0;
+}
+
+@media screen and (max-width: 1050px) {
+    .ml_header {
+        padding: 3rem;
+    }
+
+    .ml_header-container h1 {
+        font-size: 40px;
+    }
+
+    .ml_header-container p {
+        font-size: 14px;
+    }
+
+    .ml_header-cert {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .ml_header-container h3 {
+        font-size: 30px;
+        line-height: 44px;
+        text-align: center;
+    }
+
+    .ml_header-cert_brand {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .ml_header-container h1 {
+        font-size: 36px;
+    }
+
+    .ml_header-container p {
+        font-size: 12px;
+    }
+
+    .ml_header-container h3 {
+        font-size: 26px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .ml_mistallogik {
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .ml_header {
+        padding: 1rem;
+    }
+
+    .ml_header-container h1 {
+        font-size: 32px;
+    }
+
+    .ml_header-container p {
+        font-size: 12px;
+    }
+
+    .ml_header-cert {
+        gap: 0.5rem;
+    }
+
+    .ml_mistallogik {
+        display: none;
+    }
+
+    .ml_header-container h3 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .ml_header-cert_brand {
+        margin-bottom: 2rem;
+    }
+}

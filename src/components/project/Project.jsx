@@ -1,5 +1,6 @@
 import React from 'react'
 import './project.css'
+import 'aos/dist/aos.css';
 
 const Project = () => {
   return (
@@ -8,7 +9,11 @@ const Project = () => {
             <h1>Selected Projects</h1>
             <div className="ml_project">
                 {data.map((item, img) => (
-                    <div className="ml_project-single">
+                    <div 
+                        className="ml_project-single"
+                        data-aos="fade-up" 
+                        data-aos-duration="8000"
+                    >
                         <div className="ml_project-img"></div>
                         <a href="#project">{item.title}</a>
                     </div>

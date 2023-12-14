@@ -1,0 +1,107 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+.ml_navbar {
+    padding: 1rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ml_navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.ml_navbar-section {
+    display: flex;
+}
+
+.ml_navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-right: 3rem;
+}
+
+.ml_navbar-items a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+}
+
+.ml_navbar-toggler div {
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: white;
+    transition: 0.4s ease-in;
+}
+
+.ml_navbar-toggler {
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .ml_navbar {
+        padding: 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .ml_navbar-toggler {
+        display: block;
+    }
+
+    .ml_navbar-items {
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        width: 50%;
+        height: 93vh;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+        background-color: rgb(15, 12, 12);
+        margin-right: 0;
+    }
+
+    .ml_navbar-items li {
+        background-color: rgb(15, 12, 12);
+    }
+
+    .ml_navbar-items a {
+        background-color: rgb(15, 12, 12);
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .ml_navbar {
+        padding: 1rem;
+    }
+}
+
+/* Nav Active Class */
+.ml_navbar-active {
+    transform: translateX(0%);
+}
+
+/* Toggler Icon Animation */
+.toggle .line1{
+    transform: rotate(-45deg) translate(-8px, 5px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-8px, -5px);
+}

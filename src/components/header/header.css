@@ -13,6 +13,11 @@
 }
 
 .ml_header-container h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 0.5rem;
